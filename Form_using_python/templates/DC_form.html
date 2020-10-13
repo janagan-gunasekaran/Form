@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style type="text/css">
+    .uploadfile{
+            position:relative;
+            color:#E5E5E5;    
+            text-transform: capitalize;
+            font-size: 14px;
+            left:203px;
+            top:-25px;
+        }   
+</style>
+
+    <div class="regform">
+        <h1>Form</h1>
+    </div>
+    <div class="main">
+        <form method="POST" enctype="multipart/form-data">
+
+            <h2 class="name">Name</h2>
+            <input class="email" type="text" name="name"  required><br>
+
+            <h2 class="name">Username</h2>
+            <input class="email" type="text" name="username"  required><br>
+
+            <h2 class="name">Email ID</h2>
+            <input class="email" type="email" name="email" required>
+
+            <h2 class="name">Password</h2>
+            <input class="email" type="password" name="password"  required><br>
+
+            <h2 class="name">Confirm Password</h2>
+            <input class="email" type="password" name="confirm_password"  required><br>
+
+            <h2 class="name">Mobile number</h2>
+            <input class="firstname" type="tel" name="mobile" pattern="[0-9]{10}" placeholder="0123456789" required><br>
+
+            <h2 class="name">User Profile Image</h2>
+            <input class="uploadfile" type="file" id="myFile" name="file" required>
+
+
+            <h2 class="name">DOB</h2>
+            <input class="firstname" type="date" name="dob" placeholder="dd-mm-yy" required>
+
+            <h2 class="name">Address</h2>
+            <input class="email" type="text" name="address"  required><br>
+
+            <h2 class="name">City</h2>
+            <input class="email" type="text" name="city"  required><br>
+
+            <h2 class="name">State</h2>
+            <input class="email" type="text" name="state"  required><br>
+
+            <h2 class="name">Country</h2>
+            <input class="email" type="text" name="country"  required><br>
+
+            <button type="submit">Submit</button>
+
+
+        </form>
+    </div>
+
+{% endblock content %}
